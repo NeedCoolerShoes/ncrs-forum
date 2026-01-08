@@ -4912,63 +4912,12 @@ input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
 }
 
-input.button1, input.button2 {
-  font-size: 13px;
-}
-
-a.button1, input.button1, input.button3, a.button2, input.button2 {
-  width: auto !important;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-  background: transparent none repeat-x top left;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  font-size: 13px;
-}
-
-.format-buttons a.button1, .format-buttons input.button1, .format-buttons input.button3, .format-buttons a.button2, .format-buttons input.button2 {
-  font-size: 12px;
-}
-
-a.button1, input.button1 {
-  font-weight: bold;
-  border: 1px solid transparent;
-}
-
-input.button3 {
-  padding: 0;
-  margin: 0;
-  line-height: 5px;
-  height: 12px;
-  background-image: none;
-  font-variant: small-caps;
-}
-
 input[type="button"], input[type="submit"], input[type="reset"], input[type="checkbox"], input[type="radio"], .search-results li {
   cursor: pointer;
 }
 
-a.button2, input.button2, input.button3 {
-  border: 1px solid transparent;
-}
-
-a.button1, a.button2 {
-  text-decoration: none;
-  padding: 0 3px;
-  vertical-align: text-bottom;
-}
-
-a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-  border: 1px solid transparent;
-}
-
 input.disabled {
   font-weight: normal;
-}
-
-input.button1:focus, input.button2:focus, input.button3:focus {
-  outline-style: none;
 }
 
 .search-box {
@@ -5930,26 +5879,26 @@ table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
 }
 
 .bg2 {
-  background-color: #f6f6f6;
+  background-color: #3d4042;
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
-  background-color: #f6f6f6;
+  background-color: #3d4042;
 }
 
 .bg3 {
-  background-color: #f8f8f8;
+  background-color: #313436;
 }
 
 .bg3.panel {
   background: transparent none;
   background-color: rgba(26, 26, 26, 0.3);
-  border-top-color: #f8f8f8;
+  border-top-color: #313436;
 }
 
 .bg3.panel:before, ul.linklist.bulletin > .panel.small-icon.icon-members:before, ul.linklist.bulletin > .panel.small-icon.icon-team:before, .bg3.panel:after, .panel.icon-members:before, .panel.icon-team:before {
-  background: -webkit-linear-gradient(to bottom, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
-  background: linear-gradient(to bottom, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  background: -webkit-linear-gradient(to bottom, #313436 0%, rgba(49, 52, 54, 0) 100%);
+  background: linear-gradient(to bottom, #313436 0%, rgba(49, 52, 54, 0) 100%);
 }
 
 .section-posting .bg3.panel {
@@ -6018,7 +5967,7 @@ table.table1 tbody tr {
 }
 
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
-  background-color: #f8f8f8;
+  background-color: #313436;
   color: #fff;
 }
 
@@ -6536,53 +6485,6 @@ dd.profile-warnings {
   border-color: transparent;
 }
 
-.dropdown-visible .dropdown-select, .dropdown-visible .dropdown-select:hover, .nojs .dropdown-container:hover .dropdown-select,
-.buttons > .button:hover,
-.button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
-  border-color: #f69901 !important;
-  background-color: #f69901;
-  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#26FFFFFF);
-  color: #fff;
-}
-
-.dropdown-visible .dropdown-select:after, .dropdown-visible .dropdown-select.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .dropdown-visible .dropdown-select.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.icon-team.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members.icon-team:before, .dropdown-visible .dropdown-select:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-team.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.icon-members.small-icon.icon-team:before, .dropdown-visible .dropdown-select:hover:after, .dropdown-visible .icon-members:hover:before, .dropdown-visible ul.linklist.bulletin > li.small-icon.icon-members:hover:before, .dropdown-visible ul.linklist.bulletin > .small-icon.icon-members:hover:before, .dropdown-visible .icon-team:hover:before, .dropdown-visible ul.linklist.bulletin > .icon-team.small-icon.icon-members:hover:before, .dropdown-visible ul.linklist.bulletin > li.small-icon.icon-team:hover:before, .dropdown-visible ul.linklist.bulletin > .small-icon.icon-team:hover:before, .dropdown-visible ul.linklist.bulletin > li.small-icon.icon-members.icon-team:hover:before, .dropdown-visible .dropdown-select:hover:before, .dropdown-visible ul.linklist.bulletin > li.small-icon.icon-members:hover:before, .dropdown-visible ul.linklist.bulletin > .small-icon.icon-members:hover:before, .dropdown-visible ul.linklist.bulletin > li.small-icon.icon-team:hover:before, .dropdown-visible ul.linklist.bulletin > .small-icon.icon-team:hover:before, .dropdown-visible ul.linklist.bulletin > .small-icon.icon-team.icon-members:hover:before, .dropdown-visible ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .nojs .dropdown-container:hover .dropdown-select:after, .nojs .dropdown-container:hover .dropdown-select.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover .dropdown-select.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.icon-team.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members.icon-team:before, .nojs .dropdown-container:hover .dropdown-select:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-team.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.icon-members.small-icon.icon-team:before,
-.buttons > .button:hover:after,
-.buttons > .icon-members:hover:before,
-ul.linklist.bulletin.buttons > li.small-icon.icon-members:hover:before,
-ul.linklist.bulletin.buttons > .small-icon.icon-members:hover:before,
-.buttons > .icon-team:hover:before,
-ul.linklist.bulletin.buttons > .icon-team.small-icon.icon-members:hover:before,
-ul.linklist.bulletin.buttons > li.small-icon.icon-team:hover:before,
-ul.linklist.bulletin.buttons > .small-icon.icon-team:hover:before,
-ul.linklist.bulletin.buttons > li.small-icon.icon-members.icon-team:hover:before,
-.buttons > .button:hover:before,
-ul.linklist.bulletin.buttons > li.small-icon.icon-members:hover:before,
-ul.linklist.bulletin.buttons > .small-icon.icon-members:hover:before,
-ul.linklist.bulletin.buttons > li.small-icon.icon-team:hover:before,
-ul.linklist.bulletin.buttons > .small-icon.icon-team:hover:before,
-ul.linklist.bulletin.buttons > .small-icon.icon-team.icon-members:hover:before,
-ul.linklist.bulletin.buttons > li.icon-members.small-icon.icon-team:hover:before,
-.button:hover:after,
-.icon-members:hover:before,
-ul.linklist.bulletin > li.small-icon.icon-members:hover:before,
-ul.linklist.bulletin > .small-icon.icon-members:hover:before,
-.icon-team:hover:before,
-ul.linklist.bulletin > .icon-team.small-icon.icon-members:hover:before,
-ul.linklist.bulletin > li.small-icon.icon-team:hover:before,
-ul.linklist.bulletin > .small-icon.icon-team:hover:before,
-ul.linklist.bulletin > li.small-icon.icon-members.icon-team:hover:before,
-.button:hover:before,
-ul.linklist.bulletin > li.small-icon.icon-members:hover:before,
-ul.linklist.bulletin > .small-icon.icon-members:hover:before,
-ul.linklist.bulletin > li.small-icon.icon-team:hover:before,
-ul.linklist.bulletin > .small-icon.icon-team:hover:before,
-ul.linklist.bulletin > .small-icon.icon-team.icon-members:hover:before,
-ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropdown-visible .dropdown-select:after, .dropdown-visible .dropdown-select.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .dropdown-visible .dropdown-select.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.icon-team.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members.icon-team:before, .dropdown-visible .dropdown-select:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .dropdown-visible ul.linklist.bulletin > .dropdown-select.small-icon.icon-team.icon-members:before, .dropdown-visible ul.linklist.bulletin > li.dropdown-select.icon-members.small-icon.icon-team:before, .nojs .dropdown-container:hover .dropdown-select:after, .nojs .dropdown-container:hover .dropdown-select.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover .dropdown-select.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.icon-team.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members.icon-team:before, .nojs .dropdown-container:hover .dropdown-select:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-team:before, .nojs .dropdown-container:hover ul.linklist.bulletin > .dropdown-select.small-icon.icon-team.icon-members:before, .nojs .dropdown-container:hover ul.linklist.bulletin > li.dropdown-select.icon-members.small-icon.icon-team:before {
-  color: #fff !important;
-}
-
 .contact-icons a {
   border-color: #313335;
 }
@@ -6885,23 +6787,23 @@ ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropd
 }
 
 #tabs .tab > a:hover {
-  background: #f8f8f8;
+  background: #313436;
   color: #55b2ff;
 }
 
 #tabs .activetab > a,
 #tabs .activetab > a:hover {
-  background: #f8f8f8;
-  background: -webkit-linear-gradient(top, #3d4042 0%, #f8f8f8 100%);
-  background: linear-gradient(to bottom, #3d4042 0%, #f8f8f8 100%);
-  box-shadow: 0 10px 10px -10px #f8f8f8;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3D4042', endColorstr='#FFF8F8F8', GradientType=0 );
-  border-color: #f8f8f8;
-  color: #f3f3f3;
+  background: #313436;
+  background: -webkit-linear-gradient(top, #3d4042 0%, #313436 100%);
+  background: linear-gradient(to bottom, #3d4042 0%, #313436 100%);
+  box-shadow: 0 10px 10px -10px #313436;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3D4042', endColorstr='#FF313436', GradientType=0 );
+  border-color: #313436;
+  color: #dfdfdf;
 }
 
 #minitabs .tab > a {
-  background-color: #f6f6f6;
+  background-color: #3d4042;
 }
 
 #minitabs .activetab > a,
@@ -6924,7 +6826,7 @@ ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropd
 }
 
 #navigation a:hover {
-  background: #f6f6f6;
+  background: #3d4042;
   color: #55b2ff;
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.25) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.25) 100%);
@@ -6947,7 +6849,7 @@ ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropd
 }
 
 #navigation > hr {
-  border-top-color: #f6f6f6;
+  border-top-color: #3d4042;
 }
 
 .panel-container h2 {
@@ -6955,7 +6857,7 @@ ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropd
 }
 
 .panel-container .panel {
-  background: #737373;
+  background: #232425;
   box-shadow: none;
   border-width: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
@@ -6986,7 +6888,7 @@ ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropd
 }
 
 .cp-mini {
-  background-color: #f6f6f6;
+  background-color: #3d4042;
 }
 
 .current {
@@ -7015,12 +6917,12 @@ ul.linklist.bulletin > li.icon-members.small-icon.icon-team:hover:before, .dropd
 }
 
 #gallery label {
-  background: #f6f6f6;
+  background: #3d4042;
   border-color: #313335;
 }
 
 #gallery label:hover {
-  background-color: #f8f8f8;
+  background-color: #313436;
 }
 
 select {
@@ -7092,7 +6994,7 @@ fieldset.fields2 dl:hover dt label {
 .inputbox:focus, select:focus {
   background-color: #131315;
   border-color: #55b2ff;
-  color: #0F4987;
+  color: #55b2ff;
 }
 
 .inputbox:hover::-moz-placeholder {
@@ -7117,38 +7019,6 @@ fieldset.fields2 dl:hover dt label {
 
 .inputbox:focus:-ms-input-placeholder {
   color: transparent;
-}
-
-a.button1, input.button1, input.button3, a.button2, input.button2 {
-  color: #f2f2f2;
-  border-color: #232428 #232428 #1e2326;
-  background-color: #e8e8e8;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
-}
-
-a.button1, input.button1 {
-  border-color: #a8a8a8;
-  background-color: #f6f6f6;
-}
-
-input.button3 {
-  background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-
-a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-  border-color: #d1870e;
-  color: #f69901;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.1) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
-}
-
-input.button1:focus, input.button2:focus, input.button3:focus {
-  border-color: #509bd9;
-  color: #55b2ff;
 }
 
 input.disabled {
@@ -7186,7 +7056,7 @@ input.disabled {
 }
 
 .dropdown-extended ul li:hover {
-  background-color: #f6f6f6;
+  background-color: #3d4042;
   color: #fff;
 }
 
@@ -7312,13 +7182,13 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .notification_list li.dropdown-notification:hover {
-  background-color: #f6f6f6;
+  background-color: #3d4042;
   color: #9ca3af;
 }
 
 .notification_list li.dropdown-notification:hover, .panel-container .notification_list li.dropdown-notification:hover {
-  border-top-color: white;
-  border-bottom-color: #dddddd;
+  border-top-color: #555a5d;
+  border-bottom-color: #252627;
 }
 
 .notification_list li.dropdown-notification:hover strong {
@@ -7330,11 +7200,11 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .notification_list li.dropdown-notification:hover p.notification-time, .notification_list li.dropdown-notification:hover p.notifications_time {
-  color: #bebebe;
+  color: #878787;
 }
 
 .notification_list li.dropdown-notification:hover a.mark_read {
-  background-color: white;
+  background-color: black;
 }
 
 .notification_list li.dropdown-notification:hover a.mark_read, .notification_list li.dropdown-notification:hover a.mark_read:after {
@@ -7421,6 +7291,12 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
   margin-right: 0.25rem;
 }
 
+.post {
+  background-image: none;
+  box-shadow: unset;
+  border-color: #494c4e;
+}
+
 .button {
   cursor: pointer;
   user-select: none;
@@ -7435,6 +7311,11 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
   color: #f2f2f2;
 }
 
+.button:not(:disabled):active {
+  background-image: linear-gradient(to top, #313436, #24272a);
+  transform: translateY(0.125rem);
+}
+
 .button:not(:disabled):hover {
   box-shadow: #505254 0px 0px 0px 1px inset, #191a1c 0px 0px 3px, #272a2d 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
   border-radius: 0.25rem;
@@ -7446,13 +7327,74 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
   color: #9ca3af;
 }
 
-.button:active:not(:disabled) {
+.button1, .button2, .button3 {
+  cursor: pointer;
+  user-select: none;
+  border: unset;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #232428 #232428 #1e2326;
+  background-image: linear-gradient(to top, #24272a, #313436);
+  box-shadow: #3d4042 0px 0px 0px 1px inset, #191a1c 0px 1px 3px, #1f2226 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+  box-sizing: border-box;
+  touch-action: auto;
+  color: #f2f2f2;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+  line-height: 18px;
+}
+
+.button1:not(:disabled):active, .button2:not(:disabled):active, .button3:not(:disabled):active {
   background-image: linear-gradient(to top, #313436, #24272a);
   transform: translateY(0.125rem);
 }
 
+.button1:not(:disabled):hover, .button2:not(:disabled):hover, .button3:not(:disabled):hover {
+  box-shadow: #505254 0px 0px 0px 1px inset, #191a1c 0px 0px 3px, #272a2d 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #232428 #232428 #1e2326 !important;
+  background-image: linear-gradient(to top, #24272a, #313436);
+  box-shadow: #3d4042 0px 0px 0px 1px inset, #191a1c 0px 1px 3px, #1f2226 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+  outline: none;
+  color: #9ca3af;
+}
+
 .navbar.secondary li {
   color: #fff;
+}
+
+input {
+  background-color: #131315;
+  color: #f2f2f2;
+}
+
+#page-footer .copyright {
+  color: #000;
+}
+
+#page-footer .copyright a {
+  color: #131315;
+}
+
+#navigation a {
+  color: #f2f2f2;
+  background: #3d4042;
+}
+
+#navigation a:hover {
+  background: #3d4042;
+  color: #55b2ff;
+}
+
+#navigation #active-subsection a {
+  background: #55b2ff;
+  color: #fff;
+}
+
+#navigation #active-subsection a:hover {
+  background-color: #f69901;
 }
 
 /* --------------------------------------------------------------

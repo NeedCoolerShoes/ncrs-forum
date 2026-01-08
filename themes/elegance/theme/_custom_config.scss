@@ -44,7 +44,7 @@ $input-border:							#313436 !default;	// Input border color
 $input-hover-text:						$input-text !default;
 $input-hover-bg:						$input-bg !default;
 $input-hover-border:					$secondary-color !default;
-$input-focus-text:						#0F4987 !default;
+$input-focus-text:						$primary-color !default;
 $input-focus-bg:						$input-bg !default;
 $input-focus-border:					$primary-color !default;
 $input-border-radius:					4px !default;
@@ -75,3 +75,9 @@ $secondary-nav-hover-link:				$link-color !default;
 $secondary-nav-hover-gradient-start:	transparent !default;
 $secondary-nav-hover-gradient-end:		transparent !default;
 $secondary-nav-hover-shadow:			none !default;
+
+// Blocks
+$block-background2:						#3d4042 !default;	// Blocks with .bg2 background color
+$block-background3:						#313436 !default;	// Blocks with .bg3 background color - mostly UCP/MCP and posting form
+
+$block-border:							#f9f9f9 !default;	// Border color for blocks

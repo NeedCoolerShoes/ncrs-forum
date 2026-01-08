@@ -1008,20 +1008,20 @@ dd.profile-warnings {
 	border-color: transparent; 
 }
 
-.dropdown-visible .dropdown-select, .dropdown-visible .dropdown-select:hover, .nojs .dropdown-container:hover .dropdown-select,
-.buttons > .button:hover,
-.button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
-	border-color: $secondary-color !important;
-	background-color: $secondary-color;
-	background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#26FFFFFF);
-	color: $overlay-color;
+// .dropdown-visible .dropdown-select, .dropdown-visible .dropdown-select:hover, .nojs .dropdown-container:hover .dropdown-select,
+// .buttons > .button:hover,
+// .button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
+// 	border-color: $secondary-color !important;
+// 	background-color: $secondary-color;
+// 	background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+// 	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#26FFFFFF);
+// 	color: $overlay-color;
 
-	&:after, &:before {
-		color: $overlay-color !important;
-	}
-}
+// 	&:after, &:before {
+// 		color: $overlay-color !important;
+// 	}
+// }
 
 .contact-icons a		{ border-color: $block-inner-border; }
 
@@ -1494,39 +1494,39 @@ fieldset.quick-login input.inputbox {
 // Form button styles
 // ----------------------------------------
 
-a.button1, input.button1, input.button3, a.button2, input.button2 {
-	color: $button-text;
-	border-color: $button-border;
-	background-color: $button-bg;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
-}
+// a.button1, input.button1, input.button3, a.button2, input.button2 {
+// 	color: $button-text;
+// 	border-color: $button-border;
+// 	background-color: $button-bg;
+// 	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
+// 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, 0) 100%);
+// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30FFFFFF, endColorstr=#00FFFFFF);
+// }
 
-a.button1, input.button1 {
-	border-color: $button-main-border;
-	background-color: mix($button-bg, $white-color, 40%);
-}
+// a.button1, input.button1 {
+// 	border-color: $button-main-border;
+// 	background-color: mix($button-bg, $white-color, 40%);
+// }
 
-input.button3 {
-	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
+// input.button3 {
+// 	background-image: none;
+// 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+// }
 
-// Hover states
-a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	border-color: mix($block-background, $secondary-color, 20%);
-	color: $secondary-color;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
-}
+// // Hover states
+// a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+// 	border-color: mix($block-background, $secondary-color, 20%);
+// 	color: $secondary-color;
+// 	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
+// 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 100%);
+// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#18FFFFFF);
+// }
 
-// Focus states
-input.button1:focus, input.button2:focus, input.button3:focus {
-	border-color: mix($block-background, $primary-color, 20%);
-	color: $primary-color;
-}
+// // Focus states
+// input.button1:focus, input.button2:focus, input.button3:focus {
+// 	border-color: mix($block-background, $primary-color, 20%);
+// 	color: $primary-color;
+// }
 
 input.disabled {
 	color: $muted-color;

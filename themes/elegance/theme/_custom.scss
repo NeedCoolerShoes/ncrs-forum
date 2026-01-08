@@ -53,7 +53,13 @@
   margin-right: 0.25rem;
 }
 
-.button {
+.post {
+  background-image: none;
+  box-shadow: unset;
+  border-color: #494c4e;
+}
+
+@mixin ncrs-button {
   cursor: pointer;
   user-select: none;
   border: unset;
@@ -66,24 +72,72 @@
 
   touch-action: auto;
   color: $text-color;
+
+  &:not(:disabled) {
+    &:active {
+      background-image: linear-gradient(to top, rgb(49, 52, 54), rgb(36, 39, 42));
+      transform: translateY(0.125rem);
+    }
+
+    &:hover {
+      box-shadow: #505254 0px 0px 0px 1px inset, #191a1c 0px 0px 3px, #272a2d 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+      border-radius: 0.25rem;
+      border-width: 1px;
+      border-color: rgb(35, 36, 40) rgb(35, 36, 40) rgb(30, 35, 38) !important;
+      background-image: linear-gradient(to top, #24272a, #313436);
+      box-shadow: #3d4042 0px 0px 0px 1px inset, #191a1c 0px 1px 3px, #1f2226 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+      outline: none;
+      color: $link-color;
+    }
+  }
 }
 
-.button:not(:disabled):hover {
-  box-shadow: #505254 0px 0px 0px 1px inset, #191a1c 0px 0px 3px, #272a2d 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
-  border-radius: 0.25rem;
-  border-width: 1px;
-  border-color: rgb(35, 36, 40) rgb(35, 36, 40) rgb(30, 35, 38) !important;
-  background-image: linear-gradient(to top, #24272a, #313436);
-  box-shadow: #3d4042 0px 0px 0px 1px inset, #191a1c 0px 1px 3px, #1f2226 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
-  outline: none;
-  color: $link-color;
+.button {
+  @include ncrs-button();
 }
 
-.button:active:not(:disabled) {
-  background-image: linear-gradient(to top, rgb(49, 52, 54), rgb(36, 39, 42));
-  transform: translateY(0.125rem);
+.button1, .button2, .button3 {
+  @include ncrs-button();
+
+  padding: $button-top-padding $button-side-padding;
+	font-size: $button-font-size;
+	font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+	line-height: $button-line-height;
 }
 
 .navbar.secondary li {
   color: $white-color;
+}
+
+input {
+  background-color: $input-bg;
+  color: $input-text;
+}
+
+#page-footer .copyright {
+  color: $black-color;
+
+  a {
+    color: #131315;
+  }
+}
+
+// Link styles for the sub-section links
+#navigation a {
+	color: $text-color;
+	background: $block-background;
+}
+
+#navigation a:hover {
+	background: $block-background2;
+	color: $link-hover-color;
+}
+
+#navigation #active-subsection a {
+	background: $primary-color;
+	color: $overlay-color;
+}
+
+#navigation #active-subsection a:hover {
+	background-color: $secondary-color;
 }
