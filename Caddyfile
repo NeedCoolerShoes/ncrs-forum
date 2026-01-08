@@ -1,0 +1,42 @@
+{
+	servers {
+		trusted_proxies static private_ranges
+		trusted_proxies_strict
+	}
+}
+
+:8080 {
+    rate_limit {
+        distributed
+        zone dynamic {
+            key    {client_ip}
+            events 80
+            window 5s
+            jitter 0.1
+        }
+        log_key
+    }
+
+    root * /phpbb/www
+
+    php_fastcgi unix//run/php-fpm.sock {
+        trusted_proxies private_ranges
+        env REMOTE_ADDR {client_ip}
+    }
+
+    file_server
+
+    log stdout
+}
+
+:9080 {
+    root * /var/www/html/public
+
+    php_fastcgi unix//run/php-fpm.sock {
+        trusted_proxies private_ranges
+    }
+
+    file_server
+
+    log stdout
+}

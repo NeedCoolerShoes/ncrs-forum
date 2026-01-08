@@ -1,0 +1,21 @@
+services:
+  phpbb:
+    image: source.hodakov.me/hdkv/phpbb
+    ports:
+      - '8080:8080'
+      - '9080:9080'
+    volumes:
+      - 'phpbb-sqlite:/phpbb/sqlite'
+      - 'phpbb-files:/phpbb/www/files'
+      - 'phpbb-store:/phpbb/www/store'
+      - 'phpbb-avatars:/phpbb/www/images/avatars/upload'
+      - './Caddyfile:/etc/caddy/Caddyfile'
+      - './extensions:/phpbb/www/ext'
+      - './themes/elegance:/phpbb/www/styles/elegance'
+    # environment:
+      # PHPBB_INSTALL: 'true'
+volumes:
+  phpbb-sqlite: {}
+  phpbb-files: {}
+  phpbb-store: {}
+  phpbb-avatars: {}
