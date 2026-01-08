@@ -11,3 +11,67 @@
 // 
 // $show-logo: true;
 // $use-wrapper: false;
+
+// Absolute black and white colors. Reverse them for dark styles
+$black-color:							#000 !default;		// Main color to mix with. Black for light styles, white for dark styles
+$white-color:							#fff !default;		// Opposite of $black-color
+
+// Page colors
+$page-background:						#f0f0f0 !default;	// HTML element
+$content-background:					#1a1a1a !default;	// Page inside content wrapper
+$content-border-color:					transparent !default;	// Border color for content wrapper
+
+// Primary colors
+$primary-color:							#55b2ff !default;	// Main color, used for links and stuff
+$secondary-color:						#f69901 !default;	// Secondary color, usually in red - yellow range
+$block-background:						#3d4042 !default;	// Background of blocks
+// $block-background-reported:				#f5e9e9 !default;	// Background for reported posts
+
+// Global color values
+$text-color:							#f2f2f2 !default;	// Text color
+$bold-text-color:						$white-color !default;	// Text color with higher contrast to background. #000 or #fff
+$post-text-color:						$text-color !default;	// Text inside posts
+$link-color:							#9ca3af !default;	// Links
+$link-hover-color:						$primary-color !default;	// Links, hover state
+$muted-color:							mix($white-color, $content-background, 60%) !default;	// Gray color
+$faint-color:							mix($white-color, $content-background, 30%) !default;	// Gray color
+$rules-color:							$secondary-color !default;	// Forum rules
+
+// Inputs
+$input-text:							$text-color !default;	// Input text color
+$input-bg:								#131315 !default;	// Input background
+$input-border:							#313436 !default;	// Input border color
+$input-hover-text:						$input-text !default;
+$input-hover-bg:						$input-bg !default;
+$input-hover-border:					$secondary-color !default;
+$input-focus-text:						#0F4987 !default;
+$input-focus-bg:						$input-bg !default;
+$input-focus-border:					$primary-color !default;
+$input-border-radius:					4px !default;
+
+// Buttons
+$button-bg:								#e8e8e8 !default;
+$button-border-radius:					0.25rem !default;
+$button-border:							rgb(35, 36, 40) rgb(35, 36, 40) rgb(30, 35, 38) !default;
+$button-main-border:					#a8a8a8 !default;
+$button-icon:							#909090 !default;
+$button-icon-hover:						#006ac6 !default;
+$button-text:							$text-color !default;
+
+$button-top-padding:					2px !default;
+$button-side-padding:					8px !default;
+$button-border-width:					1px !default;
+
+$big-button-border-radius:				4px !default;	// For big buttons and blocks like quick search
+
+// Primary navigation
+$primary-nav-bg:						#313436 !default;
+$primary-nav-gradient-start:			#3D4042 !default;
+$primary-nav-gradient-end:				#313436 !default;
+
+// Secondary navigation
+$secondary-nav-hover-bg:				transparent !default;
+$secondary-nav-hover-link:				$link-color !default;
+$secondary-nav-hover-gradient-start:	transparent !default;
+$secondary-nav-hover-gradient-end:		transparent !default;
+$secondary-nav-hover-shadow:			none !default;

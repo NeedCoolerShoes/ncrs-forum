@@ -4,3 +4,86 @@
 //	This file requires SASS compiler.
 //	You can find instructions here: http://www.artodia.com/phpbb-31-tutorials/compile-theme/
 //
+
+.navbar {
+  background-color: $primary-nav-bg;
+  background-image: linear-gradient(to bottom, $primary-nav-gradient-start 0, $primary-nav-gradient-end 100%);
+}
+
+.navbar, .panel {
+  box-shadow: unset;
+  border-width: 0px;
+}
+
+.panel, .forabg, .forumbg {
+  background-image: none;
+}
+
+.navbar .nav-tabs .tab.dropdown-visible, .navbar .nav-tabs .tab:hover {
+  background-image: linear-gradient(to bottom, $primary-nav-gradient-start 0, $primary-nav-gradient-end 100%);
+}
+
+.navbar .nav-tabs .tab.selected {
+  background-image: none;
+}
+
+.topiclist .header, .forabg ul.topiclist li.header, .forumbg ul.topiclist li.header {
+  background-color: $primary-nav-bg;
+  background-image: linear-gradient(to bottom, $primary-nav-gradient-start 0, $primary-nav-gradient-end 100%);
+}
+
+.forabg, .forumbg {
+  border: none;
+}
+
+.search-box .inputbox, .search-box .inputbox:hover, .search-box .inputbox:focus, .search-box .button:hover {
+  border-color: $input-border;
+}
+
+.search-header {
+  border: none;
+}
+
+#keywords {
+  border-radius: 4px;
+  border: 1px solid $input-border;
+}
+
+#search fieldset > * {
+  margin-right: 0.25rem;
+}
+
+.button {
+  cursor: pointer;
+  user-select: none;
+  border: unset;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(35, 36, 40) rgb(35, 36, 40) rgb(30, 35, 38);
+  background-image: linear-gradient(to top, #24272a, #313436);
+  box-shadow: #3d4042 0px 0px 0px 1px inset, #191a1c 0px 1px 3px, #1f2226 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+  box-sizing: border-box;
+
+  touch-action: auto;
+  color: $text-color;
+}
+
+.button:not(:disabled):hover {
+  box-shadow: #505254 0px 0px 0px 1px inset, #191a1c 0px 0px 3px, #272a2d 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(35, 36, 40) rgb(35, 36, 40) rgb(30, 35, 38) !important;
+  background-image: linear-gradient(to top, #24272a, #313436);
+  box-shadow: #3d4042 0px 0px 0px 1px inset, #191a1c 0px 1px 3px, #1f2226 0px 4px, rgba(0, 0, 0, 0.2) 0px 4px 3px;
+  outline: none;
+  color: $link-color;
+}
+
+.button:active:not(:disabled) {
+  background-image: linear-gradient(to top, rgb(49, 52, 54), rgb(36, 39, 42));
+  transform: translateY(0.125rem);
+}
+
+.navbar.secondary li {
+  color: $white-color;
+}

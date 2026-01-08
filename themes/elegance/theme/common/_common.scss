@@ -73,6 +73,9 @@ body {
 	min-height: 100%;
 	box-sizing: border-box;
 	-webkit-print-color-adjust: exact;
+	background-image: url(./images/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 $h1-font-size:		$font-size + 10px !default;
