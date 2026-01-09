@@ -33,7 +33,8 @@
 }
 
 .forabg, .forumbg {
-  border: none;
+  border: 1px solid $block-background;
+  box-shadow: unset;
 }
 
 .search-box .inputbox, .search-box .inputbox:hover, .search-box .inputbox:focus, .search-box .button:hover {

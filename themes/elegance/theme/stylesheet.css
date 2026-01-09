@@ -7271,7 +7271,8 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .forabg, .forumbg {
-  border: none;
+  border: 1px solid #3d4042;
+  box-shadow: unset;
 }
 
 .search-box .inputbox, .search-box .inputbox:hover, .search-box .inputbox:focus, .search-box .button:hover {
