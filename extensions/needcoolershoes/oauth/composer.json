@@ -1,0 +1,32 @@
+{
+    "name": "needcoolershoes/oauth",
+    "type": "phpbb-extension",
+    "description": "NCRS Oauth Extension for phpBB 3.2",
+    "homepage": "https://needcoolershoes.com",
+    "version": "0.1.0",
+    "time": "2026-01-12",
+    "keywords": ["phpbb", "extension", "ncrs", "oauth"],
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Moxvallix",
+            "email": "dev@moxvallix.com",
+            "homepage": "https://moxvallix.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": "~1.0",
+        "carlos-mg89/oauth": "~0.8"
+    },
+    "require-dev": {
+        "phpbb/epv": "dev-master"
+    },
+    "extra": {
+        "display-name": "NCRS Oauth Extension",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.3.0,<4.0.0@dev"
+        }
+    }
+}

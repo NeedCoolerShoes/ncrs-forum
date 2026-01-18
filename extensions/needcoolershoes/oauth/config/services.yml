@@ -1,0 +1,8 @@
+services:
+  auth.provider.oauth.service.ncrs:
+    class: needcoolershoes\oauth\auth\provider\oauth\service\ncrs
+    arguments:
+      - '@config'
+      - '@request'
+    tags:
+      - { name: auth.provider.oauth.service }
