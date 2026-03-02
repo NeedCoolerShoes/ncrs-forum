@@ -59,7 +59,6 @@ class NCRSService extends OAuth2Service
     protected function parseAccessTokenResponse($responseBody)
     {
         $data = json_decode($responseBody, true);
-        error_log($responseBody, 0);
 
         if (null === $data || !is_array($data)) {
             throw new TokenResponseException('Unable to parse response.');

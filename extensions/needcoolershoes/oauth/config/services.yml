@@ -1,4 +1,23 @@
 services:
+  auth.provider.oauth:
+    class: needcoolershoes\oauth\auth\provider\oauth\oauth
+    arguments:
+      - '@config'
+      - '@dbal.conn'
+      - '@auth.provider.db'
+      - '@event_dispatcher'
+      - '@language'
+      - '@request'
+      - '@auth.provider.oauth.service_collection'
+      - '@user'
+      - '%tables.auth_provider_oauth_token_storage%'
+      - '%tables.auth_provider_oauth_states%'
+      - '%tables.auth_provider_oauth_account_assoc%'
+      - '%tables.users%'
+      - '%core.root_path%'
+      - '%core.php_ext%'
+    tags:
+      - { name: auth.provider }
   auth.provider.oauth.service.ncrs:
     class: needcoolershoes\oauth\auth\provider\oauth\service\ncrs
     arguments:
@@ -6,3 +25,7 @@ services:
       - '@request'
     tags:
       - { name: auth.provider.oauth.service }
+  event_dispatcher:
+    class: phpbb\event\dispatcher
+    arguments:
+        - '@service_container'

@@ -67,8 +67,6 @@ class ncrs extends \phpbb\auth\provider\oauth\service\base
             throw new \phpbb\auth\provider\oauth\service\exception('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE');
         }
 
-        error_log($this->request->variable('code', ''), 0);
-
         // This was a callback request from ncrs, get the token
         $this->service_provider->requestAccessToken($this->request->variable('code', ''));
 
@@ -76,8 +74,7 @@ class ncrs extends \phpbb\auth\provider\oauth\service\base
         $result = json_decode($this->service_provider->request('profile'), true);
 
         // Return the unique identifier returned from ncrs
-        error_log($result['id'], 0);
-        return $result['id'];
+        return $result;
     }
 
     /**
@@ -94,7 +91,7 @@ class ncrs extends \phpbb\auth\provider\oauth\service\base
         $result = json_decode($this->service_provider->request('profile'), true);
 
         // Return the unique identifier returned from ncrs
-        return $result['id'];
+        return $result;
     }
 
     /**
