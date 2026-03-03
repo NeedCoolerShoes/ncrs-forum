@@ -1,4 +1,8 @@
 services:
+  needcoolershoes.oauth.listener:
+    class: needcoolershoes\oauth\event\main_listener
+    tags:
+      - {name: event.listener }
   auth.provider.oauth:
     class: needcoolershoes\oauth\auth\provider\oauth\oauth
     arguments:

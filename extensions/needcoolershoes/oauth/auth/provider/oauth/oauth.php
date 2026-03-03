@@ -155,10 +155,10 @@ class oauth extends base
 	public function login($username, $password)
 	{
 		// Temporary workaround for only having one authentication provider available
-		// if (!$this->request->is_set('oauth_service'))
-		// {
-		// 	return $this->db_auth->login($username, $password);
-		// }
+		if (!$this->request->is_set('oauth_service'))
+		{
+			return $this->db_auth->login($username, $password);
+		}
 
 		// Request the name of the OAuth service
 		$provider = $this->request->variable('oauth_service', '', false);
@@ -593,6 +593,8 @@ class oauth extends base
 		{
 			return 'LOGIN_LINK_MISSING_DATA';
 		}
+
+		return 'NCRS_UNLINK_ERROR';
 
 		// Remove user specified in $link_data if possible
 		$user_id = isset($link_data['user_id']) ? $link_data['user_id'] : $this->user->data['user_id'];
