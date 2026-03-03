@@ -25,7 +25,7 @@ class NCRSService extends OAuth2Service
         parent::__construct($credentials, $httpClient, $storage, $scopes, $baseApiUri);
 
         if (null === $baseApiUri) {
-            $this->baseApiUri = new Uri('http://192.168.1.32:3000/api/v1/');
+            $this->baseApiUri = new Uri('https://needcoolershoes.com/api/v1/');
         }
     }
 
@@ -34,7 +34,7 @@ class NCRSService extends OAuth2Service
      */
     public function getAuthorizationEndpoint()
     {
-        return new Uri('http://192.168.1.32:3000/oauth/authorize');
+        return new Uri('https://needcoolershoes.com/oauth/authorize');
     }
 
     /**
@@ -42,7 +42,7 @@ class NCRSService extends OAuth2Service
      */
     public function getAccessTokenEndpoint()
     {
-        return new Uri('http://192.168.1.32:3000/oauth/token');
+        return new Uri('https://needcoolershoes.com/oauth/token');
     }
 
     /**
