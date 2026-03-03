@@ -1,0 +1,3 @@
+[submodule "docker-phpbb"]
+	path = docker-phpbb
+	url = https://github.com/NeedCoolerShoes/docker-phpbb.git

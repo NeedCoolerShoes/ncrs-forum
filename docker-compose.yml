@@ -1,6 +1,6 @@
 services:
   phpbb:
-    image: source.hodakov.me/hdkv/phpbb
+    build: ./docker-phpbb
     ports:
       - '8080:8080'
       - '9080:9080'
@@ -12,8 +12,6 @@ services:
       - './Caddyfile:/etc/caddy/Caddyfile'
       - './extensions:/phpbb/www/ext'
       - './themes/elegance:/phpbb/www/styles/elegance'
-    # environment:
-      # PHPBB_INSTALL: 'true'
 volumes:
   phpbb-sqlite: {}
   phpbb-files: {}
