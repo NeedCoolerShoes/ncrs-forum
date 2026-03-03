@@ -1,6 +1,6 @@
 services:
   phpbb:
-    build: ./docker-phpbb
+    image: registry.nucc.tr/docker-phpbb:latest
     ports:
       - '8080:8080'
       - '9080:9080'
