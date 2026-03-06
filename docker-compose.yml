@@ -12,6 +12,7 @@ services:
       - './Caddyfile:/etc/caddy/Caddyfile'
       - './extensions:/phpbb/www/ext'
       - './themes/elegance:/phpbb/www/styles/elegance'
+      - './smilies:/phpbb/www/images/smilies'
 volumes:
   phpbb-sqlite: {}
   phpbb-files: {}
