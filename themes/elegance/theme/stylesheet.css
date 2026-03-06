@@ -6279,20 +6279,20 @@ dl.faq dt, .content dl.faq dt {
 }
 
 blockquote {
-  background-color: #EBEADD;
-  border-color: #dedcc7;
+  background-color: #232428;
+  border-color: #121315;
 }
 
 blockquote blockquote,
 blockquote .codebox,
 blockquote .attachbox {
-  background-color: #EFEED9;
+  background-color: #1A1A1C;
 }
 
 blockquote blockquote blockquote,
 blockquote blockquote .codebox,
 blockquote blockquote .attachbox {
-  background-color: #edecdb;
+  background-color: #1f1f22;
 }
 
 /*blockquote:before {
@@ -6300,11 +6300,11 @@ blockquote blockquote .attachbox {
 }*/
 .codebox {
   background-color: #FFFFFF;
-  border-color: #dedcc7;
+  border-color: #121315;
 }
 
 .codebox p {
-  border-bottom-color: #e2e0cd;
+  border-bottom-color: #17181a;
 }
 
 .codebox code {
@@ -6312,12 +6312,12 @@ blockquote blockquote .attachbox {
 }
 
 .attachbox {
-  background-color: #EBEADD;
-  border-color: #dedcc7;
+  background-color: #232428;
+  border-color: #121315;
 }
 
 .attachbox dd {
-  border-top-color: #e2e0cd;
+  border-top-color: #17181a;
 }
 
 .attachbox p {
@@ -6333,7 +6333,7 @@ dl.file dd, .content dl.file.faq dd {
 }
 
 dl.thumbnail img, .content dl.thumbnail.faq img {
-  border-color: #e2e0cd;
+  border-color: #17181a;
   background-color: #3d4042;
 }
 

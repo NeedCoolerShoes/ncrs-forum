@@ -247,7 +247,7 @@ $input-border:							#c6c6c6 !default;	// Input border color
 $input-hover-text:						$input-text !default;
 $input-hover-bg:						$input-bg !default;
 $input-hover-border:					$secondary-color !default;
-$input-focus-text:						$primary-color !default;
+$input-focus-text:						#0F4987 !default;
 $input-focus-bg:						$input-bg !default;
 $input-focus-border:					$primary-color !default;
 $input-border-radius:					2px !default;
@@ -274,8 +274,8 @@ $big-button-border-radius:				4px !default;	// For big buttons and blocks like q
 
 // BBCode
 $bbcode-border-radius:					3px !default;
-$bbcode-background:						#EBEADD !default;
-$bbcode-background2:					#EFEED9 !default;
+$bbcode-background:						#232428 !default;
+$bbcode-background2:					#1A1A1C !default;
 $bbcode-outer-border:					if($light, darken($bbcode-background, 7%), lighten($bbcode-background, 7%)) !default;
 $bbcode-inner-border:					if($light, darken($bbcode-background, 5%), lighten($bbcode-background, 5%)) !default;
 $bbcode-heading-text:					#666 !default;
